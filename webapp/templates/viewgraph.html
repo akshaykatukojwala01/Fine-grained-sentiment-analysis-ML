@@ -1,0 +1,37 @@
+{% extends 'base_a.html' %}
+{% load static %}
+{% block content %}
+
+
+			
+<table id="tab">
+<tr>
+	<td>
+
+<center>
+<h2>Accuracy of Algorithms</h2>
+<img src="{% static 'images/acc.jpg' %}" width="550" height="450" >
+
+<td>
+<center>
+<h2>Precision of Algorithms
+</h2>
+<img src="{% static 'images/prec.jpg' %}"  width="550" height="450">
+
+<tr>
+	<td>
+<center>
+
+<h2>Recall of Algorithms
+</h2>
+<img src="{% static 'images/recall.jpg' %}"  width="550" height="450">
+
+<td><center>
+<h2>F1-score of Algorithms
+</h2>
+<img src="{% static 'images/f1sc.jpg' %}"  width="550" height="450">
+
+
+</table>
+
+{% endblock %}

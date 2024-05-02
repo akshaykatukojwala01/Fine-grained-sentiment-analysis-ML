@@ -1,0 +1,30 @@
+{% extends 'base_u.html' %}
+
+{% block content %}
+
+
+<h3>
+	
+{{msg}}
+	
+	<h2>
+	View Tweets
+</h2>
+</h3>
+<center>
+				<table id="tab" width="90%">
+<tr>
+	<th width="10%">Sno<th><center>Reddit Post<th><center>Sentiment
+
+				{% for d in data %}
+<tr><td>{{forloop.counter}}<td>{{d.tweet}}<td><center>{{d.sentiment}}</tr>
+				{% endfor %}
+</table>
+<br><br>
+
+<a href="/viewgraph2"><h1><font size="+5" color=""><i class="fa fa-bar-chart" aria-hidden="true"></i></h1></a></font>
+</center>
+
+
+
+{% endblock %}

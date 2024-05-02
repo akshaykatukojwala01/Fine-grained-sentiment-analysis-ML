@@ -1,0 +1,33 @@
+
+
+
+{% extends 'base_a.html' %}
+{% block content %}
+<h3>{{msg}}<h2>
+	View Scores </h2><br><br>
+</h3> <center> 
+<table id="tab" width="60%">
+<tr>
+	<th width="10%">Sno<th><center>Algorithm<th><center>Accuracy
+	<th><center>Precision
+	<th><center>Recall
+	<th><center>F1-score
+
+			{% for d in data %}
+			<tr><td>{{forloop.counter}}<td><center>{{d.algo}}
+			<td><center>{{d.accuracyv}}
+			<td><center>{{d.prec}}
+			<td><center>{{d.recall}}
+			<td><center>{{d.f1sc}}
+
+			</tr>
+				{% endfor %}
+</table>
+<br>
+<br>
+
+<center>
+</center>
+	
+{% endblock %}
+

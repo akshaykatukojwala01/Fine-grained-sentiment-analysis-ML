@@ -1,0 +1,29 @@
+{% extends 'base_u.html' %}
+
+{% block content %}
+
+
+<h3>
+	
+{{msg}}
+	
+	<h2>
+	View Posts
+</h2>
+</h3>
+<center>
+				<table id="tab" width="70%">
+<tr>
+	<th width="10%">Sno<th>Reddit Post
+
+				{% for d in data %}
+<tr><td>{{forloop.counter}}<td>{{d.tweet}}</tr>
+				{% endfor %}
+</table><br>
+<form method="get" action="/sentiresults/">
+	<input type="submit" value="Sentiment Analysis">
+</form>
+
+
+
+{% endblock %}
