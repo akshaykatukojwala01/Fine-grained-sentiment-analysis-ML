@@ -1,7 +1,7 @@
 import numpy as np
 from django.shortcuts import render, redirect
 from django.db.models import Count
-from .models import *
+
 
 
 import matplotlib.pyplot as plt
