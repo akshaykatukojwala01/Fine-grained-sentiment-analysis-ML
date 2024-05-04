@@ -7,4 +7,4 @@ pip
 scikit-learn
 scipy
 tensorboard
-gunicorn 
+matplotlib
