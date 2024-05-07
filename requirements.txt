@@ -67,3 +67,4 @@ wheel
 wrapt
 xlrd
 zipp
+gunicorn
